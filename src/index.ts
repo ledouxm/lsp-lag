@@ -7,13 +7,11 @@ const main = async () => {
   const mapReference = await db
     .selectFrom("MapPositions")
     .where("id", "=", mapId)
-    .selectAll()
+    .innerJoin("Areas", "MapPositions.subAreaId", "Areas.id")
+    .selectAll(["MapPositions"])
     .execute();
 
-  await fs.writeFile(
-    "mapReference.json",
-    JSON.stringify(mapReference, null, 2),
-  );
+  await fs.writeFile("mapArea.json", JSON.stringify(mapReference, null, 2));
   console.log("done");
 };
 main();
