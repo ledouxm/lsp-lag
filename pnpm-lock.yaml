@@ -9,8 +9,8 @@ dependencies:
     specifier: ^11.7.2
     version: 11.7.2
   kysely:
-    specifier: ^0.27.5
-    version: 0.27.5
+    specifier: https://pkg.pr.new/kysely-org/kysely@1278
+    version: '@pkg.pr.new/kysely-org/kysely@1278'
 
 devDependencies:
   '@types/better-sqlite3':
@@ -552,11 +552,6 @@ packages:
     resolution: {integrity: sha512-JV/yugV2uzW5iMRSiZAyDtQd+nxtUnjeLt0acNdw98kKLrvuRVyB80tsREOE7yvGVgalhZ6RNXCmEHkUKBKxew==}
     dev: false
 
-  /kysely@0.27.5:
-    resolution: {integrity: sha512-s7hZHcQeSNKpzCkHRm8yA+0JPLjncSWnjb+2TIElwS2JAqYr+Kv3Ess+9KFfJS0C1xcQ1i9NkNHpWwCYpHMWsA==}
-    engines: {node: '>=14.0.0'}
-    dev: false
-
   /mimic-response@3.1.0:
     resolution: {integrity: sha512-z0yWI+4FDrrweS8Zmt4Ej5HdJmky15+L2e6Wgn3+iK5fWzb6T3fhNFq2+MeTRb064c6Wr4N/wv0DzQTjNzHNGQ==}
     engines: {node: '>=10'}
@@ -829,4 +824,11 @@ packages:
 
   /wrappy@1.0.2:
     resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
+    dev: false
+
+  '@pkg.pr.new/kysely-org/kysely@1278':
+    resolution: {tarball: https://pkg.pr.new/kysely-org/kysely@1278}
+    name: kysely
+    version: 0.27.5
+    engines: {node: '>=18.0.0'}
     dev: false
